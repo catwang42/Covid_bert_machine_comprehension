@@ -1,0 +1,62 @@
+
+3. to try 
+featurizers_3 = [simple_bag_of_words_featurizer,directional_bag_of_words_featurizer,
+                left_bag_of_words_featurizer,right_bag_of_words_featurizer,
+                middle_bigram_pos_tag_featurizer,]
+
+macro-average             0.760      0.540      0.694       9248      95264
+
+macro-average             0.747      0.539      [0.687]      10691     117635
+
+
+
+1. to try 
+featurizers_5 = [simple_bag_of_words_featurizer,directional_bag_of_words_featurizer,
+                 simple_bigram_featurizer,
+                 left_bag_of_words_featurizer,right_bag_of_words_featurizer,
+                 middle_bigram_pos_tag_featurizer,middle_unigram_pos_tag_featurizer
+                ]
+macro-average             0.772      0.546      0.704       9248      95264
+
+macro-average             0.753      0.543      [0.693]      10691     117635
+
+
+
+2. to try 
+featurizers_6 = [simple_bag_of_words_featurizer,directional_bag_of_words_featurizer,
+                 simple_bigram_featurizer, directional_bigram_featurizer
+                 left_bag_of_words_featurizer,right_bag_of_words_featurizer,
+                 middle_bigram_pos_tag_featurizer,middle_unigram_pos_tag_featurizer
+                ]
+ macro-average             0.769      0.520      0.692       9248      95264
+
+
+4. to try 
+featurizers_7 = [simple_bag_of_words_featurizer,directional_bag_of_words_featurizer,
+                 simple_bigram_featurizer,,
+                 left_bag_of_words_featurizer,right_bag_of_words_featurizer,
+                 middle_bigram_pos_tag_featurizer,middle_unigram_pos_tag_featurizer,
+                 middle_length_featurizer
+                ]
+
+ macro-average             0.823      0.403      0.648       9248      95264
+
+
+
+
+ featurizers_8 = [simple_bag_of_words_featurizer,directional_bag_of_words_featurizer,
+                 simple_bigram_featurizer, simple_trigram_featurizer,
+                 left_bag_of_words_featurizer,right_bag_of_words_featurizer,
+                 middle_bigram_pos_tag_featurizer,middle_unigram_pos_tag_featurizer
+                ]
+macro-average             0.758      0.540      [0.694]      10691     117635
+
+
+
+
+featurizers_9 = [simple_bag_of_words_featurizer,directional_bag_of_words_featurizer,
+                 middle_bigram_pos_tag_featurizer,
+                 left_bag_of_words_featurizer,right_bag_of_words_featurizer,
+                 middle_length_featurizer]
+
+                
