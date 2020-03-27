@@ -1969,6 +1969,15 @@
    ]
   },
   {
+   "cell_type": "code",
+   "execution_count": 99,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "bakeoff_model = word_experiment_oversample"
+   ]
+  },
+  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -1989,7 +1998,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 98,
+   "execution_count": 100,
    "metadata": {},
    "outputs": [
     {
@@ -1998,12 +2007,12 @@
      "text": [
       "              precision    recall  f1-score   support\n",
       "\n",
-      "           0      0.868     0.914     0.891      1767\n",
-      "           1      0.569     0.451     0.503       446\n",
+      "           0      0.868     0.919     0.893      1767\n",
+      "           1      0.582     0.446     0.505       446\n",
       "\n",
-      "    accuracy                          0.821      2213\n",
-      "   macro avg      0.719     0.682     0.697      2213\n",
-      "weighted avg      0.808     0.821     0.812      2213\n",
+      "    accuracy                          0.824      2213\n",
+      "   macro avg      0.725     0.683     0.699      2213\n",
+      "weighted avg      0.810     0.824     0.815      2213\n",
       "\n"
      ]
     }
@@ -2018,7 +2027,7 @@
     "    \"nli_wordentail_bakeoff_data-test.json\")\n",
     "\n",
     "nli.bake_off_evaluation(\n",
-    "    word_experiment_oversample_1,\n",
+    "    bakeoff_model,\n",
     "    test_data_filename)\n",
     "\n",
     "\n"
@@ -2048,8 +2057,7 @@
     "# Please do not remove this comment.\n",
     "\n",
     "##### YOUR CODE HERE\n",
-    "0.695 - word_experiment_tune_1\n",
-    "0.698 - word_experiment_oversample\n",
+    "0.699\n",
     "\n"
    ]
   },
