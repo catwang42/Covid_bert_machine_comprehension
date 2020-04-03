@@ -8,5 +8,5 @@ a repo for data and model on the Stanford natural language understanding subject
 [Allen Institute For AI COVID-19 Open Research Dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) 
 
 **Papers**<br>
-- link 
+- **Generating Question-Answer Hierarchies** https://arxiv.org/pdf/1906.02622.pdf
 - link 
