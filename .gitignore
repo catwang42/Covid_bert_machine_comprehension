@@ -1,0 +1,4 @@
+transformers/
+cache*
+data/*
+final_project_model/scibert_scivocab_uncased/*
