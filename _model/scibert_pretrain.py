@@ -56,3 +56,5 @@ python3 run_pretraining.py \
 	#--init_checkpoint=gs://s2-bert/s2-models/3B-s2vocab_uncased_512_finetune128 
 	#--tpu_zone=us-central1-a #
 
+
+

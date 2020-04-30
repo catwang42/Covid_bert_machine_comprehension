@@ -1,4 +1,5 @@
 transformers/
 cache*
-data/*
-final_project_model/scibert_scivocab_uncased/*
+_data/*
+_model/scibert_scivocab_uncased/*
+dev_notebook/temp_model/.DS_Store
