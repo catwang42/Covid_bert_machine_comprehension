@@ -1,0 +1,40 @@
+SQUAD_DIR=/data/home/xcs224u_student/notebooks/cs224u/data/squad
+OUTPUT_MODEL=/data/home/xcs224u_student/notebooks/cs224u/models/scibert_covid_squad
+BASE_MODEL=/data/home/xcs224u_student/notebooks/cs224u/models/scibert_covid
+
+python run_squad.py \
+  --version_2_with_negative \
+  --model_type bert \
+  --model_name_or_path $BASE_MODEL \
+  --output_dir $OUTPUT_MODEL \
+  --do_eval \
+  --do_lower_case \
+  --train_file $SQUAD_DIR/train-v2.0.json \
+  --predict_file $SQUAD_DIR/dev-v2.0.json \
+  --per_gpu_train_batch_size 18 \
+  --per_gpu_eval_batch_size 64 \
+  --learning_rate 3e-5 \
+  --num_train_epochs 3.0 \
+  --max_seq_length 384 \
+  --doc_stride 128 \
+  --save_steps 2000 \
+  --threads 24 \
+  --warmup_steps 550 \
+  --gradient_accumulation_steps 1 \
+  --fp16 \
+  --logging_steps 50 \
+  --do_train
+
+
+biobert_v1.1_pubmed_squad_v2 
+exact 75.97068980038743
+f1  79.37043950121722
+
+scibert_scivocab_uncased_squad_v2
+exact 75.07790785816559
+f1  78.47735207283013
+
+
+"transformers": "2.5.1",
+  "pytorch": "1.4.0=py3.6_cuda10.1.243_cudnn7.6.3_0",
+  "python": "3.6.5=hc3d631a_2",

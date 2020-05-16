@@ -1,8 +1,8 @@
-transformers/
+
 cache*
-_data/*
-_model/scibert_scivocab_uncased/*
-dev_notebook/temp_model/.DS_Store 
+project_CovidBert/_data/*
+project_CovidBert/_model/scibert_scivocab_uncased/*
+project_CovidBert/_dev_notebook/finetune/bioasq_data/*
+project_CovidBert/_dev_notebook/pretrain/data/*
 .DS_Store
 _dev_notebook/.DS_Store
-_dev_notebook/pretrain/data/*
